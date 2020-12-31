@@ -1,0 +1,8 @@
+<div ng-app="">
+	<form name="myForm">
+		Doctor Name: <input (keyup)="onKey($event)" />
+    New Timing : <input (keyup)="onKeyTime($event)" />
+		<button (click)="updateDoctorTiming()">Update</button>
+		<h2>Updated Timing:{{displayUpdatedTime}}</h2>
+	</form>
+</div>
